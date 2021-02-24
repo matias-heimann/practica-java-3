@@ -1,7 +1,7 @@
 package com.company.tt;
 
 public class PasswordFuerte extends Password{
-    public PasswordFuerte(String regex) {
-        super(regex);
+    public PasswordFuerte() {
+        super("[a-z]{15-20}");
     }
 }

@@ -1,7 +1,7 @@
 package com.company.tt;
 
 public class PasswordDebil extends Password{
-    public PasswordDebil(String regex) {
-        super(regex);
+    public PasswordDebil() {
+        super("[a-z]{1-4}");
     }
 }

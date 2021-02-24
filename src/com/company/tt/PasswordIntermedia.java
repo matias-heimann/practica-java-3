@@ -1,7 +1,7 @@
 package com.company.tt;
 
 public class PasswordIntermedia extends Password{
-    public PasswordIntermedia(String regex) {
-        super(regex);
+    public PasswordIntermedia() {
+        super("[a-z]{5-15}");
     }
 }

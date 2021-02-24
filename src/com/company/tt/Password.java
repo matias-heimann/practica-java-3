@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class Password{
 
-    private Pattern regex;
+    Pattern regex;
 
     public Password(String regex){
         this.regex = Pattern.compile(regex);
