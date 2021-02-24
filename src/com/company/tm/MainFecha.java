@@ -1,9 +1,9 @@
-package com.company;
+package com.company.tm;
 
 public class MainFecha {
 
     public static void main(String[] args) {
-        Fecha fecha = new Fecha(29, 2, 2000);
+        Fecha fecha = new Fecha(31, 1, 1997);
         fecha.nextDay();
         System.out.println(fecha);
     }

@@ -1,4 +1,4 @@
-package com.company;
+package com.company.tm;
 
 public class Contador {
 
