@@ -1,4 +1,4 @@
-package com.company.tm;
+package com.company.clase2.tm;
 
 public class CuentaCorriente {
 

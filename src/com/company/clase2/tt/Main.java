@@ -1,4 +1,4 @@
-package com.company.tt;
+package com.company.clase2.tt;
 
 public class Main {
     public static void main(String[] args) {

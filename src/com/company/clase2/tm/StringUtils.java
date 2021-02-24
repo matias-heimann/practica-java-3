@@ -1,4 +1,4 @@
-package com.company.tm;
+package com.company.clase2.tm;
 
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
