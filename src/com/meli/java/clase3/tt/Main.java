@@ -1,9 +1,11 @@
 package com.meli.java.clase3.tt;
 
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoSuchMethodException, IOException, InstantiationException, IllegalAccessException, InvocationTargetException, ClassNotFoundException {
 
         BubleSortImpl<Integer> quickSort = (BubleSortImpl<Integer>)MyFactory.getInstance("sorter");
         if(quickSort == null){
