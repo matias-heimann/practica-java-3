@@ -5,7 +5,7 @@ import java.util.List;
 
 public class SaveTheRopa {
     public static void main(String[] args) {
-        GuardaRopaContainer guardaRopaContainer = new GuardaRopaContainer();
+        GuardaRopaContainer guardaRopaContainer = GuardaRopaContainer.getInstance();
         guardaRopaContainer.agregarGuardaRopas();
         Prenda prenda1 = new Buzo("Azul", "Nike", "Modelo 3");
         Prenda prenda2 = new Campera("Negra", "Puma", "Modelo 1");

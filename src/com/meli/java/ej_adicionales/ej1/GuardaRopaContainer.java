@@ -5,11 +5,17 @@ import java.util.List;
 
 public class GuardaRopaContainer {
 
+    private static final GuardaRopaContainer INSTANCE = new GuardaRopaContainer();
     private HashMap<Integer, GuardaRopa> guardaropas;
 
-    public GuardaRopaContainer(){
+    private GuardaRopaContainer(){
         this.guardaropas = new HashMap<>();
     }
+
+    public static GuardaRopaContainer getInstance(){
+        return INSTANCE;
+    }
+
 
     public void agregarGuardaRopas(){
         this.guardaropas.put(this.guardaropas.size(), new GuardaRopa(this.guardaropas.size()));
