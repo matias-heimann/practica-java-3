@@ -9,7 +9,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Properties;
 
 public class MyFactory {
-    public static Object getInstance(String objName) throws IOException, ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+    public static Sorter getInstance(String objName) throws IOException, ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         Properties properties = new Properties();
 
         properties.load(new FileInputStream(new File("MyFactory.properties")));
@@ -17,6 +17,6 @@ public class MyFactory {
         Class<?> c = Class.forName(properties.getProperty(objName));
         Constructor<?> cons = c.getConstructor();
         Object object = cons.newInstance();
-        return object;
+        return (Sorter) object;
     }
 }

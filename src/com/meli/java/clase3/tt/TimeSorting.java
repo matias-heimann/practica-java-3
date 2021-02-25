@@ -9,7 +9,7 @@ public class TimeSorting {
         for(int i = 0; i < list.length; i++){
             list[i] = 100000 - i;
         }
-        Sorter<Integer> sorter = (Sorter<Integer>) MyFactory.getInstance("sorter");
+        Sorter<Integer> sorter = MyFactory.getInstance("sorter");
         if(sorter == null){
             System.out.println("ERROR");
             return;
